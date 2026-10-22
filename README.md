@@ -95,3 +95,12 @@ go test -race -count=1 ./...
 ```
 
 Các test bao gồm nhập idempotent, thứ tự phiên bản, sản phẩm đã ngừng kinh doanh, phục hồi sau khởi động lại, tái sử dụng mã batch, kiểm tra dữ liệu đầu vào và kiểm tra request HTTP.
+
+## 8. Công cụ AI
+
+Trong quá trình thực hiện, bài làm có sử dụng Claude để hỗ trợ quá trình phát triển. Cụ thể, Claude được ứng dụng trong các tác vụ sau:
+
+- Tạo cấu trúc thư mục và nền tảng ban đầu.
+- Phác thảo các đoạn mã cơ bản.
+- Tra cứu nhanh thông tin và cú pháp.
+- Hỗ trợ tìm và gỡ lỗi nhanh chóng.
