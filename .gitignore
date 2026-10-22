@@ -1,10 +1,7 @@
-# Build outputs
 /supplier-catalog.exe
 /*.exe
 *.test
 *.out
-
-# Local editor / OS files
 .vscode/
 .idea/
 .DS_Store
