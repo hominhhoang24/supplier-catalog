@@ -5,11 +5,8 @@
 ## 1. Yêu cầu
 
 - Go 1.23 trở lên
-- Git (nếu cần đưa project lên GitHub)
 
 ## 2. Chạy ứng dụng trên Windows
-
-Mở PowerShell hoặc Terminal trong VS Code, chuyển đến thư mục chứa `go.mod`, rồi chạy:
 
 ```powershell
 go test -count=1 ./...
@@ -37,8 +34,6 @@ Dashboard tiếng Việt hỗ trợ:
 - Tìm kiếm sản phẩm và lọc trạng thái.
 - Theo dõi lịch sử batch, tiến độ xử lý và thông tin lỗi.
 - Làm mới dữ liệu hiển thị.
-
-Giao diện và API chạy cùng một tiến trình Go, không cần cài đặt hoặc build frontend riêng.
 
 ## 4. API
 
@@ -89,7 +84,7 @@ API từ chối JSON không hợp lệ, trường không được định nghĩa
 
 Dữ liệu sản phẩm và tiến độ batch được lưu trong `data/catalog.json`. Ứng dụng ghi qua file tạm rồi đổi tên để giảm nguy cơ file bị ghi dở. Đây là demo cục bộ, một tiến trình; không hỗ trợ nhiều instance ghi đồng thời. Nếu triển khai thực tế, nên cân nhắc SQLite hoặc PostgreSQL, giao dịch, ràng buộc dữ liệu, xác thực và giám sát vận hành.
 
-**Lưu ý:** Không xóa hoặc thay thế `data/catalog.json` nếu muốn giữ dữ liệu hiện có. Trước khi thử nghiệm, hãy sao lưu file này.
+Không xóa hoặc thay thế `data/catalog.json` nếu muốn giữ dữ liệu hiện có. Trước khi thử nghiệm, hãy sao lưu file này.
 
 ## 7. Chạy test
 

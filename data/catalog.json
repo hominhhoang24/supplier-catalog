@@ -1,4 +1,124 @@
 {
-  "products": {},
-  "batches": {}
+  "products": {
+    "DEMO-001": {
+      "sku": "DEMO-001",
+      "name": "Office Chair Pro",
+      "price": 150,
+      "version": 3,
+      "withdrawn": true,
+      "updatedAt": "2026-10-22T13:21:04.8901847Z"
+    },
+    "DEMO-002": {
+      "sku": "DEMO-002",
+      "name": "Desk Lamp",
+      "price": 35,
+      "version": 1,
+      "withdrawn": false,
+      "updatedAt": "2026-10-22T13:18:38.0909335Z"
+    }
+  },
+  "batches": {
+    "demo-001-create-products": {
+      "id": "demo-001-create-products",
+      "records": [
+        {
+          "sku": "DEMO-001",
+          "name": "Office Chair",
+          "price": 120,
+          "version": 1,
+          "withdrawn": false
+        },
+        {
+          "sku": "DEMO-002",
+          "name": "Desk Lamp",
+          "price": 35,
+          "version": 1,
+          "withdrawn": false
+        }
+      ],
+      "status": "Completed",
+      "nextIndex": 2,
+      "processed": 2,
+      "skipped": 0,
+      "payloadHash": "876cf3a0465ee3e3",
+      "createdAt": "2026-10-22T13:18:38.0843614Z",
+      "updatedAt": "2026-10-22T13:18:38.0925244Z"
+    },
+    "demo-002-update-product": {
+      "id": "demo-002-update-product",
+      "records": [
+        {
+          "sku": "DEMO-001",
+          "name": "Office Chair Pro",
+          "price": 150,
+          "version": 2,
+          "withdrawn": false
+        }
+      ],
+      "status": "Completed",
+      "nextIndex": 1,
+      "processed": 1,
+      "skipped": 0,
+      "payloadHash": "e0fd1b7413b3f95c",
+      "createdAt": "2026-10-22T13:19:14.8568457Z",
+      "updatedAt": "2026-10-22T13:19:14.8622433Z"
+    },
+    "demo-003-stale-update": {
+      "id": "demo-003-stale-update",
+      "records": [
+        {
+          "sku": "DEMO-001",
+          "name": "Old Office Chair",
+          "price": 90,
+          "version": 1,
+          "withdrawn": false
+        }
+      ],
+      "status": "Completed",
+      "nextIndex": 1,
+      "processed": 0,
+      "skipped": 1,
+      "payloadHash": "ded370a4e2c6fd88",
+      "createdAt": "2026-10-22T13:19:52.996513Z",
+      "updatedAt": "2026-10-22T13:19:53.0027335Z"
+    },
+    "demo-005-withdraw-product": {
+      "id": "demo-005-withdraw-product",
+      "records": [
+        {
+          "sku": "DEMO-001",
+          "name": "Office Chair Pro",
+          "price": 150,
+          "version": 3,
+          "withdrawn": true
+        }
+      ],
+      "status": "Completed",
+      "nextIndex": 1,
+      "processed": 1,
+      "skipped": 0,
+      "payloadHash": "e782ef9b2d4b95ec",
+      "createdAt": "2026-10-22T13:21:04.8868312Z",
+      "updatedAt": "2026-10-22T13:21:04.8918009Z"
+    },
+    "demo-006-withdrawn-stale": {
+      "id": "demo-006-withdrawn-stale",
+      "records": [
+        {
+          "sku": "DEMO-001",
+          "name": "Office Chair Pro",
+          "price": 150,
+          "version": 2,
+          "withdrawn": false
+        }
+      ],
+      "status": "Completed",
+      "nextIndex": 1,
+      "processed": 0,
+      "skipped": 1,
+      "payloadHash": "e0fd1b7413b3f95c",
+      "createdAt": "2026-10-22T13:21:38.9061617Z",
+      "updatedAt": "2026-10-22T13:21:38.9127665Z"
+    }
+  }
 }
